@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+*.env
+.env
+
+# Azure Functions
+local.settings.json
+*.PublishSettings
+
+# VSCode
+.vscode/
+.history/
+
+# macOS / Linux
+.DS_Store
+*.swp
+.idea/
+
+# Node.js (for Slack bot if using JavaScript)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+*.log
+
+# Jupyter (if used for KQL demo notebooks)
+.ipynb_checkpoints/
+
+# GitHub
+.github/workflows/.DS_Store

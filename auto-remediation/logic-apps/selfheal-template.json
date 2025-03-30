@@ -1,0 +1,25 @@
+{
+  "definition": {
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+    "actions": {
+      "Restart_VM": {
+        "type": "Http",
+        "inputs": {
+          "method": "POST",
+          "uri": "https://management.azure.com/subscriptions/<sub-id>/resourceGroups/<rg>/providers/Microsoft.Compute/virtualMachines/<vm>/restart?api-version=2021-11-01",
+          "authentication": {
+            "type": "ManagedServiceIdentity"
+          }
+        }
+      }
+    },
+    "triggers": {
+      "When_alert_detected": {
+        "type": "Http",
+        "inputs": {
+          "method": "POST"
+        }
+      }
+    }
+  }
+}

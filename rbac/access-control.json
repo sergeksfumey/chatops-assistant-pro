@@ -1,0 +1,7 @@
+{
+  "type": "AAD RBAC",
+  "mapping": {
+    "user@domain.com": ["reader", "vm-restart"],
+    "admin@domain.com": ["admin", "all"]
+  }
+}

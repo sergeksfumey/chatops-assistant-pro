@@ -1,0 +1,5 @@
+{
+  "botId": "<bot-id>",
+  "botPassword": "<bot-password>",
+  "endpoint": "https://<azure-function-url>/api/messages"
+}

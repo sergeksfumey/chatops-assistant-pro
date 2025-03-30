@@ -1,0 +1,4 @@
+Perf
+| where CounterName == "% Processor Time"
+| summarize avg(CounterValue) by Computer
+| top 5 by avg_CounterValue desc

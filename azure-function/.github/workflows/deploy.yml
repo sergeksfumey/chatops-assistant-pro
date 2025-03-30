@@ -1,0 +1,26 @@
+name: Deploy Azure Function
+
+on:
+  push:
+    paths:
+      - 'azure-function/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+    - name: Install dependencies
+      run: |
+        cd azure-function
+        pip install -r requirements.txt
+    - name: Deploy to Azure
+      uses: Azure/functions-action@v1
+      with:
+        app-name: 'chatops-function'
+        package: './azure-function'
+        publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
