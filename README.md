@@ -1,24 +1,24 @@
-# 🤖 AI-Powered ChatOps Assistant for Infrastructure Management
+# AI-Powered ChatOps Assistant for Infrastructure Management
 
 A smart, secure, and cloud-native **ChatOps Assistant** that lets you manage infrastructure using natural language commands via Microsoft Teams or Slack. It integrates with Azure Function Apps, OpenAI, Terraform, Azure Monitor, Sentinel, and Logic Apps for automation, telemetry, and self-healing workflows.
 
 ---
 
-## 🚀 Features
+## Features
 
-- ✅ Natural Language Command Parsing with OpenAI  
-- ✅ Azure Function App Backend (Python)  
-- ✅ Slack & Teams Integration  
-- ✅ Secure RBAC-Based Access Control  
-- ✅ Real-Time System Health via Log Analytics (KQL)  
-- ✅ Self-Healing with Azure Automation & Logic Apps  
-- ✅ GitHub Actions CI/CD Pipeline  
-- ✅ Dockerized Local Development  
-- ✅ Azure Sentinel Integration for Threat Detection  
+- Natural Language Command Parsing with OpenAI  
+- Azure Function App Backend (Python)  
+- Slack & Teams Integration  
+- Secure RBAC-Based Access Control  
+- Real-Time System Health via Log Analytics (KQL)  
+- Self-Healing with Azure Automation & Logic Apps  
+- GitHub Actions CI/CD Pipeline  
+- Dockerized Local Development  
+- Azure Sentinel Integration for Threat Detection  
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Component         | Technology                          |
 |------------------|-------------------------------------|
@@ -34,7 +34,7 @@ A smart, secure, and cloud-native **ChatOps Assistant** that lets you manage inf
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 chatops-assistant-pro/
@@ -52,16 +52,16 @@ chatops-assistant-pro/
 
 ---
 
-## 🛠️ Setup & Deployment
+## Setup & Deployment
 
-### 1️⃣ Clone This Repo
+### 1️. Clone This Repo
 
 ```bash
 git clone https://github.com/your-username/chatops-assistant-pro.git
 cd chatops-assistant-pro
 ```
 
-### 2️⃣ Deploy Azure Resources with Terraform
+### 2. Deploy Azure Resources with Terraform
 
 ```bash
 cd terraform
@@ -69,7 +69,7 @@ terraform init
 terraform apply
 ```
 
-### 3️⃣ Configure `.gitignore`
+### 3️. Configure `.gitignore`
 
 Ensure the following are included:
 
@@ -82,7 +82,7 @@ local.settings.json
 .env
 ```
 
-### 4️⃣ Set OpenAI API Key
+### 4️. Set OpenAI API Key
 
 In `azure-function/local.settings.json`:
 
@@ -97,14 +97,14 @@ In `azure-function/local.settings.json`:
 }
 ```
 
-### 5️⃣ Run Locally
+### 5️. Run Locally
 
 ```bash
 cd azure-function
 func start
 ```
 
-### 6️⃣ Or Run with Docker
+### 6️. Or Run with Docker
 
 ```bash
 docker build -t chatops-assistant .
@@ -113,7 +113,7 @@ docker run -p 8080:80 chatops-assistant
 
 ---
 
-## 💬 Example ChatOps Commands
+## Example ChatOps Commands
 
 | User Query                      | Action                            |
 |--------------------------------|-----------------------------------|
@@ -124,16 +124,16 @@ docker run -p 8080:80 chatops-assistant
 
 ---
 
-## 🔐 Security Practices
+## Security Practices
 
-- 🔒 Role-Based Access Control (RBAC)
-- 🔒 Secret Scanning and Blocking
-- 🔒 Terraform state and sensitive files excluded
-- 🔒 Integration with Azure Monitor and Sentinel
+- Role-Based Access Control (RBAC)
+- Secret Scanning and Blocking
+- Terraform state and sensitive files excluded
+- Integration with Azure Monitor and Sentinel
 
 ---
 
-## 🔁 Auto-Remediation Features
+## Auto-Remediation Features
 
 - CPU or memory alerts trigger:
   - Azure Automation Runbooks
@@ -145,7 +145,7 @@ docker run -p 8080:80 chatops-assistant
 
 ---
 
-## 🔄 CI/CD with GitHub Actions
+## CI/CD with GitHub Actions
 
 - Auto-deploy Azure Functions on push
 - Publish profile stored as GitHub secret
@@ -153,7 +153,7 @@ docker run -p 8080:80 chatops-assistant
 
 ---
 
-## 📌 Future Enhancements
+## Future Enhancements
 
 - [ ] Azure Key Vault Integration for Secrets
 - [ ] Extend Self-Healing to AKS, App Services
@@ -162,7 +162,7 @@ docker run -p 8080:80 chatops-assistant
 
 ---
 
-## 🙌 Author
+## Author
 
 **Serge Fumey**  
 [GitHub](https://github.com/sergeksfumey) • [LinkedIn](https://linkedin.com/in/sergeksfumey)
